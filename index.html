@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Loyalty</title>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0 auto;
+      background-position: center;
+    }
+    header {
+      padding: 30px 0px;
+      background-color: #008B00;
+      width: 100%;
+    }
+    .heading {
+      color: #fff;
+      margin-left: 8px;
+      font-size: 190%;
+      font-weight: bolder;
+    }
+    nav {
+      background-color: #00CD00;
+      padding: 21px 0px;
+      text-align: center;
+    }
+    nav a {
+      font-size: 120%;
+      font-weight: bolder;
+      text-decoration: none;
+      padding: 0% 6.6%;
+      color: #006400;
+    }
+    form {
+      margin-top: 90px;
+      margin-bottom: 90px;
+      padding: 0% 25%;
+    }
+    form table th {
+      font-size: 200%;
+      text-align: center;
+      color: #006400;
+      padding: 30px 0px;
+    }
+    input {
+      width: 100%;
+      height: 30px;
+      font-size: 100%;
+    }
+    label {
+      font-size: 65%;
+    }
+    footer {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(0, 20, 0);
+      color: #fff;
+    }
+    footer p {
+      font-size: 110%;
+    }
+    .first_hr {
+      margin-top: 5%;
+      width: 50%;
+    }
+    .last_hr {
+      width: 70%;
+      margin-bottom: 3%;
+    }
+    .col1 {
+      float: left;
+    }
+    .col2 {
+      float: right;
+    }
+    li {
+      font-size: 80%;
+      text-align: left;
+      width: 70%;
+    }
+    .main_col {
+      padding: 0% 25%;
+    }
+    .signup_button {
+      background-color: #006400;
+      color: #fff;
+      font-size: 120%;
+      width: 104%;
+      font-weight: bolder;
+      height: 60px;
+      border-radius: 4px;
+      border: none;
+      margin-top: 13px;
+    }
+    .signup_button:hover {
+      font-size: 140%;
+      height: 70px;
+      margin-top: 10px;
+    }
+    .signup_button:active {
+      color: #006400;
+      background-color: #fff;
+    }
+    nav a:hover {
+      font-size: 140%;
+      color: #8B2500;
+    }
+    input {
+      border: 1px solid #006400;
+      height: 40px;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+    input:focus {
+      outline: none;
+      box-shadow: 0px 0px 2px 1px #3B3B3B;
+    }
+    ::placeholder {
+      color: #006400;
+      opacity: 60%;
+    }
+    input:focus::placeholder {
+      opacity: 40%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="heading">Loyalty Loans and Savings</span>
+  </header>
+  <nav>
+    <a href="#home" title="Home Page" target="_self">HOME</a>
+    <a href="#signup" title="Register now and start using our services" target="_self">REGISTER</a>
+    <a href="http://localhost:63342/pythonProject/loginpage.html?_ijt=98ip4auqscldckdo802aeppfq8&_ij_reload=RELOAD_ON_SAVE" title="Login to your registered account" target="_self">LOGIN</a>
+  </nav>
+  <main>
+    <form enctype="multipart/form-data" method="post" target="_blank">
+      <table align="center">
+        <thead>
+          <tr>
+            <th>Register</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" name="first_name" autofocus required placeholder="First Name" id="firstname"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="middle_name" placeholder="Middle Name" id="middlename"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="last_name" required placeholder="Last Name" id="lastname"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="email" name="email" required placeholder="Email" id="mail"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="username" required placeholder="Username" id="uname"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="tel" name="phone" required placeholder="Phone Number" id="phonenumber" class="apart"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Date Of Birth:</label><br/>
+              <input type="date" name="date" required id="dob" class="apart"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="password" name="password" required placeholder="Password" id="passwd"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="password" name="confirm_password" required placeholder="Confirm Password" id="confirm_passwd"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Sign Up" name="submit" id="button" class="signup_button"/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </main>
+  <footer>
+    <div class="foot" align="center">
+      <div class="first_hr"><hr align="center"/></div>
+      <p>Loyalty Savings and Loans</p>
+      <div class="last_hr"><hr align="center"/></div>
+    </div>
+    <div align="center" class="main_col">
+      <div class="col1">
+        <span>Contact Us</span>
+        <ul>
+          <li>+233208959583/+233239363873</li>
+          <li>loyaloans.gh@gmail.com</li>
+          <li>emmanuel.eddie.j.k@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col2">
+        <span>Our Services</span>
+        <ul>
+          <li>Savings/SUSU</li>
+          <li>Loan Offers (government workers)</li>
+          <li>Loan Offers (non government workers)</li>
+          <li>GMoney Registration</li>
+          <li>MTN Data Bundles</li>
+          <li>Mobile Money Registration (all network)</li>
+          <li>Vodafone Premium Offers</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
